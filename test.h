@@ -33,6 +33,10 @@ public:
     list* getN(){
         return next;
     };
+    ~list(){
+        delete next;
+        cout<<"!";
+    }
 };
 template <class item> void readToListC(list<item>* m){
     list<item>* cur;
